@@ -1,0 +1,176 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Georgia;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(cursive.ttf);
+}
+
+body{
+	background: rgba(217,238,225,.3);
+}
+.light_bg{
+	background: rgba(217,238,225,.3);
+}
+
+.active{
+	border: 1px solid #ffff33;
+}
+
+$("select option:selected").css('backgroundColor', '#abfA');
+
+
+.round-card{
+	border-radius: 20px;
+}
+
+.my-color{
+	color: hsl(336, 100%, 60%);
+}
+
+.item img {
+	border:none !important;
+	background: white !important;
+	outline: none !important;
+}
+
+.my-btn{
+	background: hsl(336, 100%, 60%);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.my-btn-outline{
+	color: hsl(336, 100%, 60%);
+	background:white;
+	border: 2px solid hsl(336, 100%, 60%);
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.doctring_imgs{
+	max-width: 200px !important;
+}
+
+
+
+.mylist1 li{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.upcoming_card{
+	margin-top: -100px;
+	background: #000;
+	border-radius: 20px;
+}
+
+.bolder{
+	font-weight: bolder;
+	font-size: 200%;
+}
+
+.dark-bg{
+	background: #e6eeff;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #e6eeff;
+  color: #000;
+}
+
+.form-control, input[type="email"], input[type="password"], input[type="number"], input[type="text"], input[type="time"], input[type="date"], select{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-left-radius: 0;
+	border-bottom: 2px solid;
+	outline: none;
+	font-size: 20px bold;
+	text-align: center;
+}
+
+
+
+.accordion > .card-header{
+	background: white;
+	border:none;
+}
+.card{
+	border:none !important;
+}
+input{
+	border-radius: 0px !important;
+}
+/* ADMIN STYLE */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: hsl(270, 100%, 15%);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+  text-align: left !important;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
